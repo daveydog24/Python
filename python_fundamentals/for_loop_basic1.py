@@ -34,8 +34,12 @@
 
 # Flexible_Countdown(2, 9, 3)
 
-new_list = [3,5,1,2]
+# new_list = [3,5,1,2]
 
-for i in range(new_list):
-    print(i)
+# for i in range(new_list):
+#     print(i)
+
+def a(b,c):
+    print (b+c)
+print (a(1,2) + a(2,3))
     

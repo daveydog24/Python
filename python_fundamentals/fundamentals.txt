@@ -10,3 +10,5 @@ Composite Types:
 
 Standard spacing in Python is 4 spaces
 
+Paramater vs Argument
+    We define paramaters and pass in arguments while invoking or calling the function
