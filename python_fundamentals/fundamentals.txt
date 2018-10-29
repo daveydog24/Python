@@ -1,0 +1,12 @@
+Primitive Data Types:
+    Boolean - Asseses the truth value of something. True or False
+    Numbers - Integers (Whole Numbers), Floating point numbers (Decimals) and complex numbers.
+    Strings - A text literal.
+
+Composite Types:
+    Tuples - Immutable data structure that holds a group of values
+    Lists - A type of data that is mutable and holds a group of values that is normally related data.
+    Dictionaries - A group of key-value pairs. Dictionary elements are indexed by unique keys which are used to access values.
+
+Standard spacing in Python is 4 spaces
+
