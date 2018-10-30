@@ -7,13 +7,15 @@
 # 7. "25"
 # 8. 
 
+
+# Variables for testing
 first_name = "Zen"
 last_name = "Coder"
 age = 27
 x = (f"My name is {first_name} {last_name} and I am {age} years old.")
-
 check_list = [x, 23, "Hi Kim", 1231, "Friend", ["testing", "out", 3, "recursion is cool"], 44, "This is a test", ["words", 3], "hi"]
 
+# Print Function
 def print_out_everything_by_itself(check_list, count):
     for x in check_list:
         if isinstance(x, str):
@@ -27,6 +29,7 @@ def print_out_everything_by_itself(check_list, count):
             print("going into recursion, count number:", count)
             print_out_everything_by_itself(x, count)
 
+# invoking the function
 print_out_everything_by_itself(check_list, 0)
             
         
