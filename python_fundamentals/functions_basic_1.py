@@ -12,10 +12,9 @@ last_name = "Coder"
 age = 27
 x = (f"My name is {first_name} {last_name} and I am {age} years old.")
 
-check_list = [x, 23, "Hi Kim", 1231, "Friend", 44, "This is a test"]
+check_list = [x, 23, "Hi Kim", 1231, "Friend", ["testing", "out", 3, "recursion is cool"], 44, "This is a test", ["words", 3], "hi"]
 
-
-def print_out_everything_by_itself(check_list):
+def print_out_everything_by_itself(check_list, count):
     for x in check_list:
         if isinstance(x, str):
             x = x.split()
@@ -24,9 +23,11 @@ def print_out_everything_by_itself(check_list):
         elif isinstance(x, int):
             print (f"Number: {x}")
         elif isinstance(x, list):
-            print_out_everything_by_itself(x)
+            count += 1
+            print("going into recursion, count number:", count)
+            print_out_everything_by_itself(x, count)
 
-print_out_everything_by_itself(check_list)
+print_out_everything_by_itself(check_list, 0)
             
         
 
