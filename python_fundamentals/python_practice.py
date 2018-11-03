@@ -18,6 +18,15 @@ def ASCII(str1, str2, total):
         else:
             count += 1
 
+    if len(one) == 0:
+        total += len(two)
+        amount = 99
+        final_sum = 0
+        while total > 0:
+            final_sum += amount
+            total -= 1
+        print(final_sum)
+        return final_sum
         
 str1 = 'boat'
 str2 = 'coat'
