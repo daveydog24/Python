@@ -2,6 +2,13 @@
 # Created by David Wukelic
 
 def ASCII(str1, str2, total):
+    str1_test = isinstance(str1,str)
+    str2_test = isinstance(str2,str)
+
+    if str1_test == False or str2_test == False:
+        print("Error: Content doesn't contain only strings")
+        return -1
+
     one = list(str1)
     two = list(str2)
     total = total
@@ -42,6 +49,8 @@ def ASCII(str1, str2, total):
             two.remove(y)
         del one[0]
         total += 1
+        one = ''.join(one)
+        two = ''.join(two)
         ASCII(one, two, total)
         
 str1 = 'bat'
