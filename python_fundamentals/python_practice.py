@@ -5,6 +5,12 @@ def ASCII(str1, str2, total):
     two = list(str2)
     total = total
     count = 0
+
+    if len(one) > len(two):
+        temp = one
+        one = two
+        two = temp 
+
         
 str1 = 'boat'
 str2 = 'coat'
