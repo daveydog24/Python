@@ -1,4 +1,5 @@
-# This is a file to test python functions and techniques.
+# ASCII Character Counting
+# Created by David Wukelic
 
 def ASCII(str1, str2, total):
     one = list(str1)
@@ -6,17 +7,25 @@ def ASCII(str1, str2, total):
     total = total
     count = 0
 
+    # sets up lists to make sure we always check the smaller lists so no errors occur
     if len(one) > len(two):
         temp = one
         one = two
         two = temp 
 
+    # deletes matching characters
     while count < len(one):
         if one[count] == two[count]:
             del one[count]
             del two[count]
         else:
             count += 1
+    
+    '''
+    conditional that ends function if lists are empty or uses 
+    recursion to continue function till lists are empty
+    then counts the character score and returns it
+    '''
 
     if len(one) == 0:
         total += len(two)
@@ -35,6 +44,6 @@ def ASCII(str1, str2, total):
         total += 1
         ASCII(one, two, total)
         
-str1 = 'boat'
+str1 = 'bat'
 str2 = 'coat'
 print ASCII(str1, str2, 0)
