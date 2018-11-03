@@ -27,6 +27,13 @@ def ASCII(str1, str2, total):
             total -= 1
         print(final_sum)
         return final_sum
+    else:
+        y = one[0]
+        if y in two:
+            two.remove(y)
+        del one[0]
+        total += 1
+        ASCII(one, two, total)
         
 str1 = 'boat'
 str2 = 'coat'
