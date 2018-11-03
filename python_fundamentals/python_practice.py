@@ -11,6 +11,13 @@ def ASCII(str1, str2, total):
         one = two
         two = temp 
 
+    while count < len(one):
+        if one[count] == two[count]:
+            del one[count]
+            del two[count]
+        else:
+            count += 1
+
         
 str1 = 'boat'
 str2 = 'coat'
