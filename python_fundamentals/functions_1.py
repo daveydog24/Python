@@ -29,11 +29,10 @@ round( 3.654 ) # returns 4
 
 def randInt(min = 0, max = 100):
     import random
-    min_num = min
-    max_num = max
-    print(min_num)
-    print(max_num)
+    num = random.random()*max + min
+    return (int(round(num)))
 
-randInt()
+random_num = randInt(min = 0, max = 100)
+print(random_num)
 
 
