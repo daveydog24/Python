@@ -43,7 +43,6 @@ print(f"min of y: {min_y}")
 print(f"max of y: {max_z}")
 print(f"sorted z: {sorted_z}")
 
-'''
 
 capitals = {"svk":"Bratislava","deu":"Berlin", "dnk":"Copenhagen"}
 # creating a new key/value pair
@@ -70,4 +69,11 @@ type_of_capitals = type(capitals)
 print(length_of_capitals)
 print(string_of_capitals)
 print(type_of_capitals)
+
+'''
+# python code below!
+arr = [1,3,5,7]
+arr[0], arr[-1] = arr[-1], arr[0]
+
+print(arr)
 
