@@ -1,18 +1,17 @@
+'''
 # This is a file to test python functions and techniques.
+y = ["The boy went to the zoo", 5, 33, 12, "friends", 56, "winning", "testing", 11]
+string = ""
+total_sum = 0
 
-
-# y = ["The boy went to the zoo", 5, 33, 12, "friends", 56, "winning", "testing", 11]
-# string = ""
-# total_sum = 0
-
-# for x in y:
-#     if isinstance(x, str):
-#         string += x + " "
-#     elif isinstance(x, int):
-#         total_sum += x
+for x in y:
+    if isinstance(x, str):
+        string += x + " "
+    elif isinstance(x, int):
+        total_sum += x
         
-# print(string)
-# print(total_sum)
+print(string)
+print(total_sum)
 
 # inclusive left
 # exclusive right
@@ -44,6 +43,8 @@ print(f"min of y: {min_y}")
 print(f"max of y: {max_z}")
 print(f"sorted z: {sorted_z}")
 
+'''
+
 capitals = {"svk":"Bratislava","deu":"Berlin", "dnk":"Copenhagen"}
 # creating a new key/value pair
 capitals["abc"] = "New Country" 
@@ -62,8 +63,11 @@ for val in capitals.values():
 for key, val in capitals.items():
      print(key, " = ", val)
 
+length_of_capitals = len(capitals)
+string_of_capitals = str(capitals)
+type_of_capitals = type(capitals)
 
+print(length_of_capitals)
+print(string_of_capitals)
+print(type_of_capitals)
 
-
-# sorted_z = sorted(z)
-# print(f"sorted z: {sorted_z}")
