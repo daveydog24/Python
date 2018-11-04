@@ -1,20 +1,8 @@
+'''
 # Functions_2
 # Created by David Wukelic
 
 x = [ [5,2,3], [10,8,9] ] 
-students = [
-     {'first_name':  'Michael', 'last_name' : 'Jordan'},
-     {'first_name' : 'John', 'last_name' : 'Rosales'}
-]
-sports_directory = {
-    'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
-    'soccer' : ['Messi', 'Ronaldo', 'Rooney']
-}
-z = [ {'x': 10, 'y': 20} ]
-
-sports_directory["basketball"] = "david"
-print(sports_directory)
-
 
 # loops through each index of x and checks each slot in each array and 
 # changes the value of what youre looking for and what value you want to change it to
@@ -31,3 +19,47 @@ def changeValue(arr, value_in, value_out):
     return arr
 
 print(changeValue(x, 2, 1511))
+
+students = [
+     {'first_name':  'Michael', 'last_name' : 'Jordan'},
+     {'first_name' : 'John', 'last_name' : 'Rosales'}
+]
+
+# ability to change names based on index
+def change_last_name(student_list, index, new_name):
+    student_list[index]["last_name"] = new_name
+    return student_list
+
+students = change_last_name(students, 0, "Wukelic")
+
+def change_first_name(student_list, index, new_name):
+    student_list[index]["first_name"] = new_name
+    return student_list
+
+students = change_first_name(students, 0, "David")
+
+# ability to change names given only the name
+def change_name(student_list, name_to_change, new_name):
+    for students in student_list:
+        if students["first_name"] == name_to_change:
+            students["first_name"] = new_name
+        elif students["last_name"] == name_to_change:
+            students["last_name"] = new_name
+    return student_list
+
+print(students)
+change_name(students, "David", "Kimberly")
+print(students)
+
+'''
+
+sports_directory = {
+    'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
+    'soccer' : ['Messi', 'Ronaldo', 'Rooney']
+}
+z = [ {'x': 10, 'y': 20} ]
+
+sports_directory["basketball"] = "david"
+print(sports_directory)
+'
+
