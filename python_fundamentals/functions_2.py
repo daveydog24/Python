@@ -2,6 +2,9 @@
 # Functions_2
 # Created by David Wukelic
 
+
+**************************************** SECTION 1 ***********************************************
+
 x = [ [5,2,3], [10,8,9] ] 
 
 # loops through each index of x and checks each slot in each array and 
@@ -38,6 +41,9 @@ def change_first_name(student_list, index, new_name):
 
 students = change_first_name(students, 0, "David")
 
+
+**************************************** SECTION 2 ***********************************************
+
 # ability to change names given only the name
 def change_name(student_list, name_to_change, new_name):
     for students in student_list:
@@ -51,15 +57,41 @@ print(students)
 change_name(students, "David", "Kimberly")
 print(students)
 
+
+**************************************** SECTION 3 ***********************************************
+
+students = [
+     {'first_name':  'Michael', 'last_name' : 'Jordan'},
+     {'first_name' : 'John', 'last_name' : 'Rosales'},
+     {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+     {'first_name' : 'KB', 'last_name' : 'Tonel'}
+]
+
+for student in students:
+    first_name = student["first_name"] 
+    last_name = student["last_name"]
+    print(f"first_name - {first_name}, last_name - {last_name}")
+
+
+**************************************** SECTION 4 ***********************************************
 '''
 
-sports_directory = {
-    'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
-    'soccer' : ['Messi', 'Ronaldo', 'Rooney']
-}
-z = [ {'x': 10, 'y': 20} ]
+students = [
+     {'first_name':  'Michael', 'last_name' : 'Jordan'},
+     {'first_name' : 'John', 'last_name' : 'Rosales'},
+     {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+     {'first_name' : 'KB', 'last_name' : 'Tonel'}
+]
 
-sports_directory["basketball"] = "david"
-print(sports_directory)
-'
+iterateDictionary2('first_name', students)
 
+
+
+# sports_directory = {
+#     'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
+#     'soccer' : ['Messi', 'Ronaldo', 'Rooney']
+# }
+# z = [ {'x': 10, 'y': 20} ]
+
+# sports_directory["basketball"] = "david"
+# print(sports_directory)

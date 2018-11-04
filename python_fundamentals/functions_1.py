@@ -25,6 +25,7 @@ round( 3.654 ) # returns 4
 # randInt(min=50) returns a random integer between 50 to 100
 # randInt(min=50, max=500) returns a random integer between 50 and 500
 # Create this function without using random.randInt() but you are allowed to use random.random().
+
 '''
 
 def randInt(min = 0, max = 100):
