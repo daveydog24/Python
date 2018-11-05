@@ -1,5 +1,11 @@
 array = [1, 4, 6, 3, 8, 2, 9, 5]
 
+'''
+Takes an array and checks each index slot of the array
+it compares the index to the rest of the slots of the array until it finds the lowest number left unsorted
+it then swaps that min num with the current index and will do this all the way through the list until each
+index has been processed and sorted
+'''
 def selection_sort(arr):
     length = len(arr) - 1
     
