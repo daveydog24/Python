@@ -72,8 +72,26 @@ print(type_of_capitals)
 
 '''
 # python code below!
-arr = [1,3,5,7]
-arr[0], arr[-1] = arr[-1], arr[0]
 
+
+# reversing positively
+arr = [1,3,5,7,9]
+count = 1
+
+while count <= len(arr):
+    num = arr.pop(len(arr) - count)
+    arr.append(num)
+    count += 1
+print(arr)
+
+
+# reversing using negatives
+count = -1
+loops = len(arr) - 1
+while loops > 0:
+    count -= 1
+    x = arr.pop(count)
+    arr.append(x)
+    loops -= 1
 print(arr)
 
