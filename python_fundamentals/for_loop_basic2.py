@@ -2,7 +2,6 @@
 For Loop Basic II
 Created by: David Wukelic
 
-    UltimateAnalyze - Create a function that takes an array as an argument and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the array.
     ReverseList - Create a function that takes an array as an argument and return an array in a reversed order.  Do this without creating an empty temporary array.  For example reverse([1,2,3,4]) should return [4,3,2,1]. This challenge is known to appear during basic technical interviews.
 
 # Biggie Size - Given an array, write a function that changes all positive 
@@ -88,9 +87,6 @@ def minimum(arr):
 
 print(minimum(array))
 
-'''
-array = [2, -4, 1, 33, -5, 9, -11, 22]
-
 # Maximum - Create a function that takes an array as an argument and returns 
 # the maximum value in the array.  If the passed array is empty, have the 
 # function return false.  For example maximum([1,2,3,4]) should 
@@ -106,6 +102,15 @@ def maximum(arr):
     return maximum
 
 print(maximum(array))
+
+'''
+array = [2, -4, 1, 33, -5, 9, -11, 22]
+
+# UltimateAnalyze - Create a function that takes an array as an argument and 
+# returns a dictionary that has the sumTotal, average, minimum, maximum and length of the array.
+
+
+
 
 
 

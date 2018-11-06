@@ -92,6 +92,7 @@ print(arr)
 
 '''
 stacks = 55
-
+# python ternary operators
 print('Coding Dojo' if stacks >= 3 else 'You are not Coding Dojo!')
-print("Testing " ? stacks >= 3 : "this" )
+# other language ternary operators
+print('Coding Dojo' ? stacks >= 3 : 'You are not Coding Dojo!')
