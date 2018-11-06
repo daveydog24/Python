@@ -2,7 +2,6 @@
 For Loop Basic II
 Created by: David Wukelic
 
-    SumTotal - Create a function that takes an array as an argument and returns the sum of all the values in the array.  For example sumTotal([1,2,3,4]) should return 10
     Average - Create a function that takes an array as an argument and returns the average of all the values in the array.  For example multiples([1,2,3,4]) should return 2.5
     Length - Create a function that takes an array as an argument and returns the length of the array.  For example length([1,2,3,4]) should return 4
     Minimum - Create a function that takes an array as an argument and returns the minimum value in the array.  If the passed array is empty, have the function return false.  For example minimum([1,2,3,4]) should return 1; minimum([-1,-2,-3]) should return -3.
@@ -22,8 +21,6 @@ def makeItBig(arr):
     return arr
 
 print(makeItBig(array))
-'''
-array = [2, -4, 1, 33, -5, 9, -11, 22]
 
 # Count Positives - Given an array of numbers, create a function to replace 
 # last value with number of positive values. Example, countPositives([-1,1,1,1]) 
@@ -42,3 +39,18 @@ def countPositives(arr):
 
 print(countPositives(array))
 
+'''
+array = [2, -4, 1, 33, -5, 9, -11, 22]
+
+# SumTotal - Create a function that takes an array as an argument and returns 
+# the sum of all the values in the array.  For example sumTotal([1,2,3,4]) should return 10
+
+def sumTotal(arr):
+    total = 0
+
+    for index in range(0, len(arr)):
+        total += arr[index]
+    
+    return total
+
+print(sumTotal(array))
