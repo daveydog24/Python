@@ -70,10 +70,6 @@ print(length_of_capitals)
 print(string_of_capitals)
 print(type_of_capitals)
 
-'''
-# python code below!
-
-
 # reversing positively
 arr = [1,3,5,7,9]
 count = 1
@@ -83,7 +79,6 @@ while count <= len(arr):
     arr.append(num)
     count += 1
 print(arr)
-
 
 # reversing using negatives
 count = -1
@@ -95,3 +90,8 @@ while loops > 0:
     loops -= 1
 print(arr)
 
+'''
+stacks = 55
+
+print('Coding Dojo' if stacks >= 3 else 'You are not Coding Dojo!')
+print("Testing " ? stacks >= 3 : "this" )
