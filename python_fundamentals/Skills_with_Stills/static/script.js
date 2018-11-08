@@ -9,9 +9,12 @@ class User{
 function Submit(event) {
     event.preventDefault();
 
-    User.first_name = document.getElementById('first_name').value;
-    User.last_name = document.getElementById('last_name').value;
-    User.email = document.getElementById('email').value;
+    let first_name = document.getElementById('first_name').value;
+    let last_name = document.getElementById('last_name').value;
+    let email = document.getElementById('email').value;
+    User.first_name = first_name;
+    User.last_name = last_name;
+    User.email = email;
 
     alert(`Hello ${User.first_name} ${User.last_name} welcome to my website. We will send a confirmation to your email at: ${User.email}`)
     document.getElementById("myForm").reset();
