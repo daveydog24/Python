@@ -5,69 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Skills with Stills</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="wrapper">
         <div id="top">
-            <h1>Skills with Stills</h1>
-            <nav>
-                <a href="https://en.wikipedia.org/wiki/Distillation">Wikipedia</a>
-                <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xdistillation.TRS0&_nkw=distillation&_sacat=0">Price Compare</a>
-                <a href="http://www.bbc.co.uk/schools/gcsebitesize/science/ocr_gateway/carbon_chemistry/crude_oilrev3.shtml"> Distilattion Process</a>
-            </nav>
-        </div>
-        <div id="middle">
-            <div>
-                <h6>Distillery Column</h6>
-                <p hidden>
-                    A column still, also called a continuous still, patent still or Coffey 
-                    still, is a variety of still consisting of two columns.
-                </p>
-            </div>
-            <div>
-                <h6>Distillation</h6>
-                <p hidden>
-                    Distillation is the process of separating the components or substances from a liquid 
-                    mixture by using selective boiling and condensation. Distillation may result in 
-                    essentially complete separation (nearly pure components), or it may be a partial 
-                    separation that increases the concentration of selected components in the mixture. 
-                    In either case, the process exploits differences in the volatility of the mixture's 
-                    components. In industrial chemistry, distillation is a unit operation of practically 
-                    universal importance, but it is a physical separation process, not a chemical reaction.
-                </p>
-            </div>
+            <form id="myForm" method="post" action="" onsubmit="Submit(event)">
+                <label for="first_name">
+                    First Name:<input type="text" id="first_name" name="first_name">
+                </label>
+                <label for="last_name">
+                    Last Name:<input type="text" id="last_name" name="last_name">
+                </label>
+                <label for="email">
+                    Email:<input type="email" id="email" name="email">
+                </label>
+                <input type="submit" name="submit">
+            </form>
         </div>
         <div id="bottom">
-            <img src="images/Full Still Copper.jpeg" alt="">
-            <!-- <img src="images/Full Still silver.jpeg" alt="">
-            <img src="images/still.jpg" alt=""> -->
-            <div id="form">
-                <form action="">
-                    <label for="first-name">First Name<input type="text"></label>
-                    <label for="last-name">Last Name<input type="text"></label>
-                    <label for="email">Email<input type="email"></label>
-                    <label for="column">Polished?<input type="checkbox"></label>
-                    <label for="">Quanity
-                        <select name="choices" id="choices">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
-                    </label>
-
-
-                
-                    <input type="submit">
-
-                </form>
-
-            </div>
-
+            <h3 id="display"></h3>
+            <button onclick="sendAlert()">Click Me</button>
         </div>
     </div>
-    
-    
 </body>
 </html>
