@@ -1,3 +1,4 @@
+// Set a Class User with initial values all undefined
 class User{
     constructor() {
         first_name = undefined;
@@ -6,6 +7,7 @@ class User{
     }
 }
 
+// once the form is submitted prevent action, store information passed through it, define our User class, manipulate and send an alert
 function Submit(event) {
     event.preventDefault();
 
@@ -20,6 +22,7 @@ function Submit(event) {
     document.getElementById("myForm").reset();
 }
 
+// once the button is clicked manipulate the DOM with stored user information
 function sendAlert(){
     document.getElementById('display').innerHTML = (
         `Hello ${User.first_name} ${User.last_name} you are now stored in our database.`
