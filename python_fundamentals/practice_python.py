@@ -106,3 +106,18 @@ def invoker(callback_function):
 invoker(lambda x: 2 * x)
 invoker(lambda y: 5 + y)
 
+def multiplier(num):
+    start = num
+    return lambda x: num * x
+
+invoker(multiplier(10))
+
+my_arr = [1,2,3,4,5]
+
+def cubed(num):
+    return num ** 3
+
+# same thing but we dont have to make a stand alone function if we are only going to use it once
+# this is a perfect example while anonymous functions with lambda are great
+print(list(map(cubed, my_arr)))
+print(list(map(lambda num: num ** 3, my_arr)))
