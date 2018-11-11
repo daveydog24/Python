@@ -90,9 +90,19 @@ while loops > 0:
     loops -= 1
 print(arr)
 
-'''
 stacks = 55
 # python ternary operators
 print('Coding Dojo' if stacks >= 3 else 'You are not Coding Dojo!')
 # other language ternary operators
 print('Coding Dojo' ? stacks >= 3 : 'You are not Coding Dojo!')
+'''
+
+x = lambda num: num ** 2
+print(x(5))
+
+def invoker(callback_function):
+    print(callback_function(2))
+
+invoker(lambda x: 2 * x)
+invoker(lambda y: 5 + y)
+
