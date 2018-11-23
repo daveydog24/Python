@@ -54,3 +54,10 @@ class TicTacToe(object):
         print("                               ", self.board[3],"|", self.board[4],"|", self.board[5])
         print("                               ", self.board[6],"|", self.board[7],"|", self.board[8])
         print("\n" * 7)
+    
+    # where we change the game board pieces
+    def change_square(self, index):
+        if self.turn % 2 == 1:
+            self.board[index - 1] = "X"
+        else:
+            self.board[index - 1] = "O"
