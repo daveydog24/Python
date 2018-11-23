@@ -46,3 +46,11 @@ class TicTacToe(object):
         else:
             print("Please enter a valid number Corey")
             return False
+
+    # function to print the gameboard 
+    def print_game(self):
+        print("\n" * 7)
+        print("                               ", self.board[0],"|", self.board[1],"|", self.board[2])
+        print("                               ", self.board[3],"|", self.board[4],"|", self.board[5])
+        print("                               ", self.board[6],"|", self.board[7],"|", self.board[8])
+        print("\n" * 7)
