@@ -61,3 +61,29 @@ class TicTacToe(object):
             self.board[index - 1] = "X"
         else:
             self.board[index - 1] = "O"
+
+    # goes through one game of tic tac toe for a win/loss/draw
+    def one_game(self):
+        while self.turn < 10:
+            self.print_game()
+            number = self.users_choice()
+            if number == False:
+                self.turn -= 1
+            else:
+                self.guessed_nums.append(number)
+                self.change_square(number)
+                winner = self.check_winner()
+                if winner == True:
+                    self.print_game()
+                    if self.turn % 2 == 1:
+                        print(f"{self.player1} is the winner!!!!")
+                    else:
+                        print(f"{self.player2} is the winner!!!!")
+                    break
+            self.turn += 1
+        if self.turn == 10:
+            print("TIE GAME!!!")
+        else: 
+            self.board = [1,2,3,4,5,6,7,8,9]
+            self.guessed_nums = []
+            self.turn = 1
