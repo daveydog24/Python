@@ -30,3 +30,19 @@ class TicTacToe(object):
             return number
         else:
             return False
+
+    # function to check for valid entries and display proper error responses 
+    def validate_input(self, user_input):
+        try:
+            number = int(user_input)
+        except ValueError:
+            return False
+        if len(user_input) == 1:
+            if int(user_input) in self.guessed_nums:
+                    print(f"The #{user_input} has already been guessed!")
+                    return False
+            else:
+                return True
+        else:
+            print("Please enter a valid number Corey")
+            return False
