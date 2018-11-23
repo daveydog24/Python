@@ -20,3 +20,13 @@ class TicTacToe(object):
     def get_players(self):
         self.player1 = input("Enter your name Player 1: ")
         self.player2 = input("Enter your name Player 2: ")
+
+    # fuction to hand users guess
+    def users_choice(self):
+        number = input("Please select a number to mark your square: ")
+        check_num = self.validate_input(number)
+        if check_num == True:
+            number = int(number)
+            return number
+        else:
+            return False
