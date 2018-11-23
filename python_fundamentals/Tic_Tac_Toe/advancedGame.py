@@ -87,3 +87,42 @@ class TicTacToe(object):
             self.board = [1,2,3,4,5,6,7,8,9]
             self.guessed_nums = []
             self.turn = 1
+
+    # funtion to check if someone has won 
+    def check_winner(self):
+        # win by rows
+        if self.board[0] == self.board[1] == self.board[2]:
+            return True
+        elif self.board[3] == self.board[4] == self.board[5]:
+            return True
+        elif self.board[6] == self.board[7] == self.board[8]:
+            return True
+        # win by columns
+        elif self.board[0] == self.board[3] == self.board[6]:
+            return True
+        elif self.board[1] == self.board[4] == self.board[7]:
+            return True
+        elif self.board[2] == self.board[5] == self.board[8]:
+            return True
+        # win diagonally
+        elif self.board[0] == self.board[4] == self.board[8]:
+            return True
+        elif self.board[6] == self.board[4] == self.board[2]:
+            return True
+        else:
+            return False
+
+    # function to keep score for multiple games
+    # def multiple_games
+        
+game_on = True
+game = TicTacToe()
+
+while game_on:
+    answer = game.start()
+    if answer == True:
+        game.get_players()
+        game.one_game()
+    else:
+        print("Maybe next time")
+        game_on = False
