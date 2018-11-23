@@ -15,3 +15,8 @@ class TicTacToe(object):
             return True
         else:
             return False
+
+    # function to define players
+    def get_players(self):
+        self.player1 = input("Enter your name Player 1: ")
+        self.player2 = input("Enter your name Player 2: ")
