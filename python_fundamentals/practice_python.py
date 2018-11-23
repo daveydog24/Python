@@ -151,3 +151,8 @@ sub_logger(10,5)
 sub_logger(20, 10)
 
 '''
+
+import urllib.request
+response = urllib.request.urlopen("http://www.codingdojo.com")
+html = response.read()
+print(html)
