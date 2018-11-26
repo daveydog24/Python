@@ -13,7 +13,7 @@ def print_square(board):
 
 turn = 1
 while turn < 10:
-    print_square_pretty(board)
+    print_square(board)
     number = input("Please select a number to mark your square: ")
     number = int(number)
     print("You entered:", number)
