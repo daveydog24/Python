@@ -1,3 +1,13 @@
+from flask import Flask, render_template, request, redirect
+app = Flask(__name__)
+
+@app.route('/tic_tac_toe')
+def play_the_game():
+  return render_template("index.html")
+
+def changeSquare(num):
+    print(num)
+
 class TicTacToe(object):
     def __init__(self):
         self.board = [1,2,3,4,5,6,7,8,9]
@@ -114,15 +124,22 @@ class TicTacToe(object):
 
     # function to keep score for multiple games
     # def multiple_games
-        
-game_on = True
-game = TicTacToe()
+def playing_a_game():
+    game_on = True
+    game = TicTacToe()
 
-while game_on:
-    answer = game.start()
-    if answer == True:
-        game.get_players()
-        game.one_game()
-    else:
-        print("Maybe next time")
-        game_on = False
+    while game_on:
+        answer = game.start()
+        if answer == True:
+            game.get_players()
+            game.one_game()
+        else:
+            print("Maybe next time")
+            game_on = False
+
+
+# <img class="x" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Letter_x.svg" alt="x">
+# <img class="o" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBd4LBnt4XNgIlH3phAUY6iAnOPem_WJsrAeSo8v7ONK00Xoeiqg" alt="o">
+
+
+app.run(debug=True)

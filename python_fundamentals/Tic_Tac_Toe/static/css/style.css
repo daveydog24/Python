@@ -1,0 +1,29 @@
+#main{
+    width: 600px;
+    align-items: center;
+}
+#main_body{
+    width: 600px;
+}
+#topSquares div, #middleSquares div, #bottomSquares div{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+#topSquares, #middleSquares, #bottomSquares{
+    display: inline-block
+}
+.x{
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+}
+.o{
+    width: 75px;
+    height: 75px;
+    padding-left: 25px;
+    padding-top: 20px;
+}

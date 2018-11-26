@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./advancedGame.py"></script>
         <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>        <script src="application.jsx" type="text/jsx"></script> -->
     </head>
@@ -18,15 +20,21 @@
                     <h3>Going to hold the players names</h3>
                 </div>
                 <div id="main_body">
-                    <div class="square" onclick="changeSquare(1)"></div>
-                    <div class="square" onclick="changeSquare(2)"></div>
-                    <div class="square" onclick="changeSquare(3)"></div>
-                    <div class="square" onclick="changeSquare(4)"></div>
-                    <div class="square" onclick="changeSquare(5)"></div>
-                    <div class="square" onclick="changeSquare(6)"></div>
-                    <div class="square" onclick="changeSquare(7)"></div>
-                    <div class="square" onclick="changeSquare(8)"></div>
-                    <div class="square" onclick="changeSquare(9)"></div>
+                    <div id="topSquares">
+                        <div id="1" onclick="changeSquare(1)"></div>
+                        <div id="2" onclick="changeSquare(2)"></div>
+                        <div id="3" onclick="changeSquare(3)"></div>
+                    </div>
+                    <div id="middleSquares">
+                        <div id="4" onclick="changeSquare(4)"></div>
+                        <div id="5" onclick="changeSquare(5)"></div>
+                        <div id="6" onclick="changeSquare(6)"></div>
+                    </div>
+                    <div id="bottomSquares">
+                        <div id="7" onclick="changeSquare(7)"></div>
+                        <div id="8" onclick="changeSquare(8)"></div>
+                        <div id="9" onclick="changeSquare(9)"></div>
+                    </div>
                     <h3>Going to hold the actual game</h3>
                 </div>
             </div>
