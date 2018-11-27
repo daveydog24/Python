@@ -10,6 +10,7 @@ function changeSquare(num){
     console.log(num)
     document.getElementById(num).src = "https://upload.wikimedia.org/wikipedia/commons/7/77/Letter_x.svg";
     document.getElementById(num).style.display = "block";
+    document.getElementById(num).className = "x";
     
     // if (counter % 2 == 1){
     //     document.getElementById(num).src = "<img class='x' src='https://upload.wikimedia.org/wikipedia/commons/7/77/Letter_x.svg' alt='x'>";
